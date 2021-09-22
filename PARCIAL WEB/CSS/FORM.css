@@ -1,0 +1,62 @@
+html{
+text-align: center;
+padding: 100px;
+margin: 0 ;
+background-color: rgb(230, 234,238);
+
+}
+
+body{
+    background-color: rgb(230, 234,238);
+}
+
+form{
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+    padding: 30px;
+    background-color:#ffffff;
+    color:rgb(59, 81,106);
+}
+
+
+label{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+text{
+    color:rgb(59, 81,106);
+}
+
+h1{
+    display: inline-block;
+    padding-bottom: 10px;
+    color:rgb(59, 81,106);
+}
+
+h1[id="regular"]{
+    font-weight: 300;
+    
+}
+
+.inputMod [type="text"]{
+    padding-right: 40px;
+}
+
+.inputMod{
+    position: relative;
+    
+}
+
+.inputMod i{
+    position:absolute;
+    right: 0;
+    top: -2px;
+    padding: 7px 8px;
+    color: rgb(91, 91,91);
+}
+
+
+
+

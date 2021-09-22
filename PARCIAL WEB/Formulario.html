@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link href="CSS/FORM.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="JS/SCRIPT.js"></script>
+
+    <style>
+        .bb{
+        background-color:#26a844; 
+        padding: 15px 10px;
+        border-radius: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Web</h1>
+    <h1 id="regular">Developer</h1>
+
+    <form action="Resivido2.html" class="shadow p-3 mb-5">
+
+    <label>formulario de afiliación</label>
+
+        <div class="inputMod">
+        <input class="form-control " type="text" placeholder="Nombre completo" id="Nombre" />
+        <i class="bi bi-person-fill"></i>
+        </div>
+
+    <br>
+
+        <div class="inputMod"> 
+        <input class="form-control" type="text" placeholder="Email" id="Email">
+        <i class="bi bi-envelope-fill"></i>
+        </div>
+    <br>
+
+        <div class="inputMod">
+        <input class="form-control " type="text" placeholder="text" id="Telefono">
+        <i><img src="RESOURCES/telefono.PNG" width="11px" height="11px"></img></i>
+        </div>  
+    <br>
+
+        <div class="input-group mb-3">
+        <input type="text" class="form-control" id="nueva-clase">
+        <button class="btn btn-outline-success" type="button" onclick="addRow()">Gustos</button>
+        </div>
+
+      <div class="container border rounded">
+          <br>
+        <div class="row">
+          <div class="col">
+            <badge class="bb"><img src="RESOURCES/flag-regular.png" width="30px" ></badge>
+            
+          </div>
+
+          <div class="col-9">
+            <table id="mi_tabla" class="table table-bordered">
+            <thead>
+                    <tr>
+                    <th scope="col">Gustos</th>
+                    <th scope="col">%</th>
+                    <th scope="col">edit</th>
+                    <tr>
+            </thead>
+              
+            </table>
+          </div>
+          <div id="containn"></div>
+          
+
+
+
+        </div>
+      </div>
+   
+            
+                
+    
+         
+      <br>
+    </form>
+    
+</body>
+
+
+</html>

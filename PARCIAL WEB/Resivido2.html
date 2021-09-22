@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resivido2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container my-5 text-center">
+
+    <h1> Resultado </h1>
+    <br>
+    <div class="panel panel-default">
+
+    <table class="table table-bordered rounded">
+      <thead background="RESOURCES/smiley.png" style="background-color:rgb(12,150,187)">
+        <tr>
+            <th id = "Nombre" style="color:#ffffff">
+               <h1>Nombre</h1> 
+            <br>
+                Ficha
+            </th>
+
+        </thead>
+
+        <tr>
+            <th>
+               <h2 style="color:rgb(12,150,187)" >Email</h2> 
+            <button class="btn btn-primary" id = "Email">valor</button>
+            </th>
+        <tr>
+
+        <tr>
+            <th>
+                <h2 style="color:rgb(12,150,187)">Telefono</h2>
+                <button class="btn btn-primary" id = "Telefono">valor</button>
+            </th>
+        </tr>
+        
+        <tr>
+            <th>
+               <h2 style="color:rgb(12,150,187)"> Gusto </h2>
+                <button class="btn btn-success" id = "Gustos">valor</button>
+            </th>
+            
+        </tr>
+
+        <tr>
+            <th>
+                <h2 style="color:rgb(12,150,187)">Porcentaje %</h2>
+                <button class="btn btn-danger" id = "Porcentaje">valor</button>
+            </th>
+        </tr>
+
+
+        </table>
+        </div>
+
+        <script type="text/javascript">
+
+          const queryString = window.location.search;
+          const urlParams = new URLSearchParams(queryString);
+          const Nombre = urlParams.get('Nombre')
+          const Email = urlParams.get('Email')
+          const Telefono = urlParams.get('Telefono')
+          const Gustos = urlParams.get('Gustos')
+          const Porcentaje = urlParams.get('Porcentaje')
+
+
+          document.getElementById("Nombre").innerHTML= Nombre;
+          document.getElementById("Email").innerHTML = Email;
+          document.getElementById("Telefono").innerHTML = Telefono;
+          document.getElementById("Gustos").innerHTML = Gustos;
+          document.getElementById("Porcentaje").innerHTML = Porcentaje;
+
+
+
+        </script>
+
+    
+</body>
+</html>
